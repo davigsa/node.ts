@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --no-deps --no-notify src/server.ts",
     "start": "node build/server.js",
-    "test": "jest",
+    "test": "jest --coverage --forceExit",
     "build": "babel src --extensions \".ts\" --out-dir build --copy-files --no-copy-ignored "
   },
   "keywords": [],
